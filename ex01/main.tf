@@ -21,10 +21,9 @@ resource "aws_vpc" "stag" {
 }
 
 resource "aws_internet_gateway" "int_gw" {
-  vpc_id = aws.vPC.stag.id
+  vpc_id = aws_vpc.stag.id
 
   tags = {
-    valeu = "Internet_Stage_GW"
+    value = "Internet_Stage_GW"
   }
-}|
-
+}
