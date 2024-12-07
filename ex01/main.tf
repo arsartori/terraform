@@ -27,3 +27,4 @@ resource "aws_internet_gateway" "int_gw" {
     valeu = "Internet_Stage_GW"
   }
 }|
+
